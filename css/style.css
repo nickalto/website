@@ -766,7 +766,7 @@ and (max-device-width : 480px) {
 	.arrow-down {left: 160px;}
 }
 
-@media screen and (min-width: 380px){
+@media screen and (max-width: 380px){
 	.text-div p {
 		font-size: 29pt;
 	}
