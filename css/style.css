@@ -512,6 +512,12 @@ a {color: white;}
 	}
 }
 
+@media screen and (max-width: 380px){
+	.text-div p {
+		font-size: 29pt;
+	}
+}
+
 @media screen and (min-width: 684px){
 	.first-row{width: 684px;}
 	.column {width: 100%;}
