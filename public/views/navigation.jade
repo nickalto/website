@@ -1,0 +1,12 @@
+.navbar.navbar-default(role="navigation" class="#{nav_class}")
+  .navbar-header
+      button.navbar-toggle(type="button")
+        span.navbar-menu Toggle navigation
+
+    .collapse
+      ul.navbar-links
+        - each link in nav_links
+          li
+            a(href="#{link.href}" class="#{link.classes ? link.classes : ''}") #{link.title}
+
+
