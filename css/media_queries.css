@@ -109,6 +109,9 @@ p {
   margin: 6em auto;
   max-width: 1000px; }
 
+div#about {
+  margin: 10em 0em 4em 0em;
+}
 #me {
   padding: 0 2em; }
   #me h1 {
@@ -159,7 +162,7 @@ i {
   position: relative;
   height: 150px;
   width: 100%;
-  background: #ededed; }
+  background: transparent; }
   #footer p {
     text-align: center;
     position: absolute;
