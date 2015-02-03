@@ -110,7 +110,7 @@ p {
   max-width: 1000px; }
 
 div#about {
-  margin: 10em 0em 4em 0em;
+  margin: 10em auto 4em auto;
 }
 #me {
   padding: 0 2em; }
