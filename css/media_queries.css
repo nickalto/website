@@ -185,7 +185,7 @@ i {
     body .circle p {
       line-height: 250px; }
   body #three-panel, body #about, body #contact-icons {
-    margin: 3em auto;
+    margin: 6em auto;
     max-width: 600px; }
   body i {
     font-size: 2em; }
