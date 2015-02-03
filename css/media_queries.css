@@ -187,6 +187,9 @@ i {
   body #three-panel, body #about, body #contact-icons {
     margin: 6em auto;
     max-width: 600px; }
+    body #three-panel {
+      margin-top: 3em;
+    }
   body i {
     font-size: 2em; }
   body .panel {
