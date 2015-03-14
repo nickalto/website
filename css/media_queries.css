@@ -14,7 +14,7 @@ body, a {
 body {
   margin: 0;
   background: white;
-  overflow-y: hidden; }
+  overflow-y: scroll; }
   body .hidden {
     display: none; }
 
