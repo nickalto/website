@@ -1,0 +1,17 @@
+@import 'bourbon';
+@import "neat";
+@import 'variables';
+@import 'mixins';
+
+$grid-columns: 12 !global;
+// $visual-grid: true !global;
+
+.section {
+  @include outer-container;
+}
+
+.block {
+  &.-half {
+    @include span-columns(6);
+  }
+}

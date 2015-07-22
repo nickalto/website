@@ -1,0 +1,98 @@
+@import 'variables';
+@import 'mixins';
+
+#navigation {
+
+  top: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 4.635em;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 10;
+  padding: 0.5em 2em 0.5em 20em;
+
+  .title {
+    display: table;
+    height: 100%;
+    position: absolute;
+    left: 5.833em;
+    margin-left: 0;
+    top: 0;
+    strong, p {
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    p {
+      padding-left: 0.5em;
+    }
+  }
+
+  .icon {
+    width: 4.635em;
+    height: 4.635em;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .links {
+    float: right;
+    height: 100%;
+    overflow: hidden;
+    display: table;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    text-align: right;
+    text-overflow: ellipsis;
+  }
+
+  a {
+    display: table-cell;
+    padding: 0em 1em;
+    overflow: hidden;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    outline: none;
+    border: none;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+// Navigation dots
+div#fp-nav {
+  &.right {
+    top: 33%;
+    right: 24px;
+  }
+  position: absolute;
+  @include mobile {
+    display: none;
+  }
+
+  ul li {
+    margin: 4px;
+
+    div.fp-tooltip {
+      color: $navigation-pink;
+    }
+    a span, a.active span {
+      @include light-arial;
+      background-color: $intro-light-grey;
+      height: 8px;
+      width: 8px;
+      margin: -4px 0 0 -4px;
+    }
+    a.active span {
+      background-color: $navigation-pink;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import 'bourbon';
+@import "neat";
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-color: $background-color;
+  font-size: 12px;
+  max-width: 1280px;
+  margin: 0 auto !important;
+  position: relative;
+
+  * {
+    font-family: "Arial", sans-serif;
+  }
+}
+
+.section {
+  background-color: $background-color;
+  max-width: 1280px;
+}
+
+.hidden {
+  display: none;
+}
